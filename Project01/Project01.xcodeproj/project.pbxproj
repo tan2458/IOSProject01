@@ -16,6 +16,8 @@
 		A0B33D0F20F0CAD30020BD4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B33D0820F0CAD30020BD4E /* main.m */; };
 		A0B33D1C20F0CC270020BD4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B33D1420F0CC270020BD4E /* AppDelegate.m */; };
 		A0B33D1D20F0CC270020BD4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B33D1620F0CC270020BD4E /* ViewController.m */; };
+		A0B33D2B20F0CFAA0020BD4E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B33D2A20F0CFA90020BD4E /* BaseViewController.m */; };
+		A0B33D3120F0D0270020BD4E /* BELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B33D3020F0D0270020BD4E /* BELoginViewController.m */; };
 		FBF0681289B2CAA9FEF4B077 /* libPods-Project01.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2780A001162723CA4ED0AF /* libPods-Project01.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,10 @@
 		A0B33D1420F0CC270020BD4E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A0B33D1520F0CC270020BD4E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A0B33D1620F0CC270020BD4E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A0B33D2920F0CFA90020BD4E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A0B33D2A20F0CFA90020BD4E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A0B33D2F20F0D0270020BD4E /* BELoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BELoginViewController.h; sourceTree = "<group>"; };
+		A0B33D3020F0D0270020BD4E /* BELoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BELoginViewController.m; sourceTree = "<group>"; };
 		C2D2AD9C2318DCD253857494 /* Pods-Project01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project01/Pods-Project01.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,22 +242,12 @@
 		A0B33D1020F0CC270020BD4E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				A0B33D1120F0CC270020BD4E /* Commons */,
+				A0B33D2420F0CF140020BD4E /* Login */,
+				A0B33D2520F0CF370020BD4E /* Common */,
 				A0B33D1220F0CC270020BD4E /* Delegate */,
-				A0B33D1720F0CC270020BD4E /* Family */,
-				A0B33D1820F0CC270020BD4E /* HomeMessage */,
-				A0B33D1920F0CC270020BD4E /* MyHomeDevice */,
-				A0B33D1A20F0CC270020BD4E /* Setting */,
-				A0B33D1B20F0CC270020BD4E /* Store */,
+				A0B33D1E20F0CEB50020BD4E /* Sections */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		A0B33D1120F0CC270020BD4E /* Commons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Commons;
 			sourceTree = "<group>";
 		};
 		A0B33D1220F0CC270020BD4E /* Delegate */ = {
@@ -265,39 +261,69 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
-		A0B33D1720F0CC270020BD4E /* Family */ = {
+		A0B33D1E20F0CEB50020BD4E /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				A0B33D1F20F0CEB50020BD4E /* Family */,
+				A0B33D2020F0CEB50020BD4E /* HomeMessage */,
+				A0B33D2120F0CEB50020BD4E /* MyHomeDevice */,
+				A0B33D2220F0CEB50020BD4E /* Setting */,
+				A0B33D2320F0CEB50020BD4E /* Store */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		A0B33D1F20F0CEB50020BD4E /* Family */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Family;
 			sourceTree = "<group>";
 		};
-		A0B33D1820F0CC270020BD4E /* HomeMessage */ = {
+		A0B33D2020F0CEB50020BD4E /* HomeMessage */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = HomeMessage;
 			sourceTree = "<group>";
 		};
-		A0B33D1920F0CC270020BD4E /* MyHomeDevice */ = {
+		A0B33D2120F0CEB50020BD4E /* MyHomeDevice */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = MyHomeDevice;
 			sourceTree = "<group>";
 		};
-		A0B33D1A20F0CC270020BD4E /* Setting */ = {
+		A0B33D2220F0CEB50020BD4E /* Setting */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		A0B33D1B20F0CC270020BD4E /* Store */ = {
+		A0B33D2320F0CEB50020BD4E /* Store */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		A0B33D2420F0CF140020BD4E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A0B33D2F20F0D0270020BD4E /* BELoginViewController.h */,
+				A0B33D3020F0D0270020BD4E /* BELoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A0B33D2520F0CF370020BD4E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A0B33D2920F0CFA90020BD4E /* BaseViewController.h */,
+				A0B33D2A20F0CFA90020BD4E /* BaseViewController.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		D915BDACBBEAB870094DFA7B /* Pods */ = {
@@ -372,6 +398,7 @@
 		A06ACE3820F0C9A5009F0C44 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BE;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = George.tan;
 				TargetAttributes = {
@@ -463,6 +490,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B33D1D20F0CC270020BD4E /* ViewController.m in Sources */,
+				A0B33D3120F0D0270020BD4E /* BELoginViewController.m in Sources */,
+				A0B33D2B20F0CFAA0020BD4E /* BaseViewController.m in Sources */,
 				A0B33D1C20F0CC270020BD4E /* AppDelegate.m in Sources */,
 				A0B33D0F20F0CAD30020BD4E /* main.m in Sources */,
 			);
