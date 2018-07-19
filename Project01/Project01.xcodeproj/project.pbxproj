@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A06ACE5D20F0C9A6009F0C44 /* Project01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A06ACE5C20F0C9A6009F0C44 /* Project01Tests.m */; };
 		A06ACE6820F0C9A6009F0C44 /* Project01UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A06ACE6720F0C9A6009F0C44 /* Project01UITests.m */; };
+		A0AEE99620FF793500A88293 /* BELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AEE99220FF793500A88293 /* BELoginViewController.m */; };
+		A0AEE99C20FF7A3900A88293 /* BEBgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AEE99B20FF7A3900A88293 /* BEBgroundView.m */; };
+		A0AEE99F20FF7B8E00A88293 /* mainColor.png in Resources */ = {isa = PBXBuildFile; fileRef = A0AEE99E20FF7B8E00A88293 /* mainColor.png */; };
+		A0AEE9A320FF85E400A88293 /* BELogiViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AEE9A220FF85E400A88293 /* BELogiViewModel.m */; };
 		A0B33D0B20F0CAD30020BD4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B33D0220F0CAD30020BD4E /* Assets.xcassets */; };
 		A0B33D0C20F0CAD30020BD4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B33D0320F0CAD30020BD4E /* LaunchScreen.storyboard */; };
 		A0B33D0D20F0CAD30020BD4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B33D0520F0CAD30020BD4E /* Main.storyboard */; };
@@ -17,7 +21,6 @@
 		A0B33D1C20F0CC270020BD4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B33D1420F0CC270020BD4E /* AppDelegate.m */; };
 		A0B33D1D20F0CC270020BD4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B33D1620F0CC270020BD4E /* ViewController.m */; };
 		A0B33D2B20F0CFAA0020BD4E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B33D2A20F0CFA90020BD4E /* BaseViewController.m */; };
-		A0B33D3120F0D0270020BD4E /* BELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B33D3020F0D0270020BD4E /* BELoginViewController.m */; };
 		FBF0681289B2CAA9FEF4B077 /* libPods-Project01.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2780A001162723CA4ED0AF /* libPods-Project01.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,16 @@
 		A06ACE6320F0C9A6009F0C44 /* Project01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06ACE6720F0C9A6009F0C44 /* Project01UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Project01UITests.m; sourceTree = "<group>"; };
 		A06ACE6920F0C9A6009F0C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0AEE99120FF793500A88293 /* BELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BELoginViewController.h; sourceTree = "<group>"; };
+		A0AEE99220FF793500A88293 /* BELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BELoginViewController.m; sourceTree = "<group>"; };
+		A0AEE99820FF799100A88293 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		A0AEE99920FF799F00A88293 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A0AEE99A20FF7A3900A88293 /* BEBgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BEBgroundView.h; sourceTree = "<group>"; };
+		A0AEE99B20FF7A3900A88293 /* BEBgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BEBgroundView.m; sourceTree = "<group>"; };
+		A0AEE99E20FF7B8E00A88293 /* mainColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainColor.png; sourceTree = "<group>"; };
+		A0AEE9A020FF7BE500A88293 /* ProjectHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectHeader.h; sourceTree = "<group>"; };
+		A0AEE9A120FF85E400A88293 /* BELogiViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BELogiViewModel.h; sourceTree = "<group>"; };
+		A0AEE9A220FF85E400A88293 /* BELogiViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BELogiViewModel.m; sourceTree = "<group>"; };
 		A0B33D0220F0CAD30020BD4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0B33D0420F0CAD30020BD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0B33D0620F0CAD30020BD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,8 +72,6 @@
 		A0B33D1620F0CC270020BD4E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A0B33D2920F0CFA90020BD4E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		A0B33D2A20F0CFA90020BD4E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		A0B33D2F20F0D0270020BD4E /* BELoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BELoginViewController.h; sourceTree = "<group>"; };
-		A0B33D3020F0D0270020BD4E /* BELoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BELoginViewController.m; sourceTree = "<group>"; };
 		C2D2AD9C2318DCD253857494 /* Pods-Project01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project01/Pods-Project01.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,9 +159,54 @@
 			path = Project01UITests;
 			sourceTree = "<group>";
 		};
+		A0AEE99020FF793500A88293 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0AEE99120FF793500A88293 /* BELoginViewController.h */,
+				A0AEE99220FF793500A88293 /* BELoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0AEE99320FF793500A88293 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0AEE99A20FF7A3900A88293 /* BEBgroundView.h */,
+				A0AEE99B20FF7A3900A88293 /* BEBgroundView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0AEE99420FF793500A88293 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0AEE9A120FF85E400A88293 /* BELogiViewModel.h */,
+				A0AEE9A220FF85E400A88293 /* BELogiViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0AEE99520FF793500A88293 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0AEE99720FF798500A88293 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A0AEE99820FF799100A88293 /* Macros.h */,
+				A0AEE99920FF799F00A88293 /* PrefixHeader.pch */,
+				A0AEE9A020FF7BE500A88293 /* ProjectHeader.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		A0B33CEB20F0CAD30020BD4E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A0AEE99720FF798500A88293 /* Constants */,
 				A0B33D1020F0CC270020BD4E /* Main */,
 				A0B33CEC20F0CAD30020BD4E /* Categories */,
 				A0B33CF920F0CAD30020BD4E /* Libs */,
@@ -209,6 +265,7 @@
 		A0B33CFE20F0CAD30020BD4E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A0AEE99E20FF7B8E00A88293 /* mainColor.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -245,7 +302,6 @@
 				A0B33D2420F0CF140020BD4E /* Login */,
 				A0B33D2520F0CF370020BD4E /* Common */,
 				A0B33D1220F0CC270020BD4E /* Delegate */,
-				A0B33D1E20F0CEB50020BD4E /* Sections */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -261,58 +317,13 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
-		A0B33D1E20F0CEB50020BD4E /* Sections */ = {
-			isa = PBXGroup;
-			children = (
-				A0B33D1F20F0CEB50020BD4E /* Family */,
-				A0B33D2020F0CEB50020BD4E /* HomeMessage */,
-				A0B33D2120F0CEB50020BD4E /* MyHomeDevice */,
-				A0B33D2220F0CEB50020BD4E /* Setting */,
-				A0B33D2320F0CEB50020BD4E /* Store */,
-			);
-			path = Sections;
-			sourceTree = "<group>";
-		};
-		A0B33D1F20F0CEB50020BD4E /* Family */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Family;
-			sourceTree = "<group>";
-		};
-		A0B33D2020F0CEB50020BD4E /* HomeMessage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HomeMessage;
-			sourceTree = "<group>";
-		};
-		A0B33D2120F0CEB50020BD4E /* MyHomeDevice */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MyHomeDevice;
-			sourceTree = "<group>";
-		};
-		A0B33D2220F0CEB50020BD4E /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
-		A0B33D2320F0CEB50020BD4E /* Store */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Store;
-			sourceTree = "<group>";
-		};
 		A0B33D2420F0CF140020BD4E /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				A0B33D2F20F0D0270020BD4E /* BELoginViewController.h */,
-				A0B33D3020F0D0270020BD4E /* BELoginViewController.m */,
+				A0AEE99020FF793500A88293 /* Controller */,
+				A0AEE99520FF793500A88293 /* Model */,
+				A0AEE99320FF793500A88293 /* View */,
+				A0AEE99420FF793500A88293 /* ViewModel */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -440,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AEE99F20FF7B8E00A88293 /* mainColor.png in Resources */,
 				A0B33D0B20F0CAD30020BD4E /* Assets.xcassets in Resources */,
 				A0B33D0D20F0CAD30020BD4E /* Main.storyboard in Resources */,
 				A0B33D0C20F0CAD30020BD4E /* LaunchScreen.storyboard in Resources */,
@@ -490,7 +502,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B33D1D20F0CC270020BD4E /* ViewController.m in Sources */,
-				A0B33D3120F0D0270020BD4E /* BELoginViewController.m in Sources */,
+				A0AEE9A320FF85E400A88293 /* BELogiViewModel.m in Sources */,
+				A0AEE99C20FF7A3900A88293 /* BEBgroundView.m in Sources */,
+				A0AEE99620FF793500A88293 /* BELoginViewController.m in Sources */,
 				A0B33D2B20F0CFAA0020BD4E /* BaseViewController.m in Sources */,
 				A0B33D1C20F0CC270020BD4E /* AppDelegate.m in Sources */,
 				A0B33D0F20F0CAD30020BD4E /* main.m in Sources */,
@@ -666,6 +680,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DE6356Z9DW;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Project01/Classes/Constants/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Project01/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -686,6 +702,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DE6356Z9DW;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Project01/Classes/Constants/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Project01/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

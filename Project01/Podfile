@@ -1,3 +1,4 @@
 platform:ios,'8.0'
 target 'Project01' do
+    pod "Masonry"
 end
