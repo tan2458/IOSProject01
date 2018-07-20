@@ -10,5 +10,11 @@
 #define Macros_h
 
 #define IMAGE(imageName) [UIImage imageNamed:imageName]
+#define SAFE_BLOCK(block,...) if(block){block(__VA_ARGS__);}
+#define BE_WIDTH [UIScreen mainScreen].bounds.size.width
+#define BE_HEIHT [UIScreen mainScreen].bounds.size.height
+#define BE_NavigationBar_Height 64
+#define CORLOR_WITH_RGB(r,g,b,alp) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:alp]
+#define mainColor CORLOR_WITH_RGB(0, 179, 228,1.0)
 
 #endif /* Macros_h */

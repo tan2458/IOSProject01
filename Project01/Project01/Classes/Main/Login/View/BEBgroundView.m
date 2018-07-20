@@ -14,6 +14,8 @@
 
 @property(nonatomic,strong) UITextField *accountTextField; // 账号输入框
 
+@property(nonatomic,strong) UIView *separatorLine; // 分割线
+
 @property(nonatomic,strong) UITextField *passwordTextField;// 密码输入框
 
 @property(nonatomic,strong) UIView *rememberPasswordView; // 记住密码
@@ -43,13 +45,25 @@
 -(void)setupUI{
      _headerImage = [[UIImageView alloc] init];
     [self addSubview:_headerImage];
-    [_headerImage setImage:IMAGE(@"mainColor")];
+    [_headerImage setImage:IMAGE(@"login_house_english")];
+    _headerImage.contentMode = UIViewContentModeScaleAspectFit;
     
     _accountTextField = [[UITextField alloc] init];
     [self addSubview:_accountTextField];
     
+    UIImageView *leftImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0,30,30)];
+    [leftImage setImage:IMAGE(@"login_user")];
+    _accountTextField.leftView = leftImage;
+    
+    _separatorLine = [[UIView alloc] init];
+    [self addSubview:_separatorLine];
+    
     _passwordTextField = [[UITextField alloc] init];
     [self addSubview:_passwordTextField];
+    
+    UIImageView* leftImage2 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0,30,30)];
+    [leftImage2 setImage:IMAGE(@"login_password")];
+    _passwordTextField.leftView = leftImage2;
     
     _rememberPasswordView = [[UIView alloc] init];
     [self addSubview:_rememberPasswordView];
@@ -73,11 +87,19 @@
     [_accountTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self);
         make.top.equalTo(self->_headerImage.mas_bottom);
+        make.height.mas_equalTo(40);
+    }];
+    
+    [_separatorLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.accountTextField.mas_bottom);
+        make.left.right.equalTo(self);
+        make.bottom.equalTo(self.passwordTextField.mas_top);
     }];
     
     [_passwordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self);
-        make.top.equalTo(self->_accountTextField.mas_bottom);
+        make.top.equalTo(self.accountTextField.mas_bottom).mas_offset(1);
+        make.height.mas_equalTo(40);
     }];
     
     [_rememberPasswordView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -89,21 +111,18 @@
         make.left.equalTo(self).mas_offset(10);
         make.right.equalTo(self).mas_offset(-10);
         make.height.mas_equalTo(44);
-        make.bottom.equalTo(self).mas_offset(-25);
+        make.top.equalTo(self.passwordTextField.mas_bottom).mas_offset(44);
     }];
     
     [_findPassButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).mas_offset(10);
-        make.top.equalTo(self);
-        make.width.mas_equalTo(60);
+        make.top.equalTo(self.loginButton.mas_bottom).mas_offset(10);
         make.height.mas_equalTo(20);
-        
     }];
     
     [_localManagerButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self);
+        make.top.equalTo(self.loginButton.mas_bottom).mas_offset(10);
         make.right.equalTo(self).mas_offset(-10);
-        make.width.mas_equalTo(60);
         make.height.mas_equalTo(20);
     }];
 }
@@ -111,19 +130,27 @@
 -(void)initProperitys{
     _accountTextField.placeholder = @"请输入账号";
     _accountTextField.delegate = self;
+    _accountTextField.backgroundColor = [UIColor whiteColor];
+    
+    _separatorLine.backgroundColor = [UIColor lightGrayColor];
     
     _passwordTextField.placeholder = @"请输入密码";
     _passwordTextField.delegate = self;
+    _passwordTextField.backgroundColor = [UIColor whiteColor];
     
     [_loginButton setTitle:@"登录" forState:UIControlStateNormal];
-    [_loginButton setBackgroundColor:[UIColor blueColor]];
+    [_loginButton setBackgroundColor:CORLOR_WITH_RGB(0, 179, 228,1.0)];
     [_loginButton addTarget:self action:@selector(loginButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    _loginButton.layer.cornerRadius = 5.0;
+    _loginButton.layer.masksToBounds = YES;
     
     [_findPassButton setTitle:@"找回密码" forState:UIControlStateNormal];
     [_findPassButton addTarget:self action:@selector(findPassButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    [_findPassButton setTitleColor:mainColor forState:UIControlStateNormal];
     
     [_localManagerButton setTitle:@"本地管理" forState:UIControlStateNormal];
     [_localManagerButton addTarget:self action:@selector(localManagerClick) forControlEvents:UIControlEventTouchUpInside];
+    [_localManagerButton setTitleColor:mainColor forState:UIControlStateNormal];
 }
 
 #pragma mark - Events
@@ -136,7 +163,7 @@
 }
 
 -(void)localManagerClick{
-    
+  
 }
 
 /**

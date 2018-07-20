@@ -8,9 +8,13 @@
 
 #ifndef ProjectHeader_h
 #define ProjectHeader_h
-
-#import "BEBgroundView.h"
+// 公共类
 #import "Masonry.h"
+#import "BECustomNavigationBar.h"
+
+// 登录类
+#import "BEBgroundView.h"
 #import "BELogiViewModel.h"
+
 
 #endif /* ProjectHeader_h */
