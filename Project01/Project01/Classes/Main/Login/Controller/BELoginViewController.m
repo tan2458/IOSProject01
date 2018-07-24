@@ -8,7 +8,7 @@
 
 #import "BELoginViewController.h"
 
-@interface BELoginViewController ()
+@interface BELoginViewController ()<BEBgroundViewDelegate>
 
 @property(nonatomic,strong) BEBgroundView *BE_bgView;
 
@@ -30,10 +30,30 @@
     [super didReceiveMemoryWarning];
 }
 
+#pragma mark - BEGroundViewDelegate
+-(void)BEBgroundView:(BEBgroundView*)view clickEvent:(EventType)eventType{
+    switch (eventType) {
+        case LoginClickEvent:
+        {
+            [UIApplication sharedApplication].keyWindow.rootViewController = [BEMainTabController shareInstance];
+        }
+            break;
+        case RememberClickEvent:
+            break;
+        case FindPassClickEvent:
+            break;
+        case LocalClickEvent:
+            break;
+        default:
+            break;
+    }
+}
+
 #pragma mark - lazy load view
 -(BEBgroundView *)BE_bgView{
     if (!_BE_bgView) {
-        _BE_bgView = [[BEBgroundView alloc] initWithFrame:CGRectMake(0,BE_NavigationBar_Height,BE_WIDTH,100)];
+        _BE_bgView = [[BEBgroundView alloc] initWithFrame:CGRectMake(0,BE_NavigationBar_Height,BE_WIDTH,BE_HEIHT)];
+        _BE_bgView.delegate = self;
     }
     return _BE_bgView;
 }

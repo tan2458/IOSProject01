@@ -17,4 +17,9 @@
 #define CORLOR_WITH_RGB(r,g,b,alp) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:alp]
 #define mainColor CORLOR_WITH_RGB(0, 179, 228,1.0)
 
+#define CUSTOM_FONT_NAME  @"Heiti SC"
+
+#define LocatizedStirngForkey(key) NSLocalizedString(key, nil)
+#define UI_PX_2_PT(a) (CGFloat)((a)/([[UIScreen mainScreen] bounds].size.height >= 736.0f ? 2: 2))
+
 #endif /* Macros_h */

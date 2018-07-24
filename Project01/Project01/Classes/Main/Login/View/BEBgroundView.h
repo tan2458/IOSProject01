@@ -26,6 +26,8 @@ typedef NS_ENUM(NSInteger,EventType){
 
 @interface BEBgroundView : UIView
 
+@property(nonatomic,weak) id<BEBgroundViewDelegate> delegate;
+
 /**
  绑定视图模型
  */

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Project01
+
+  Created by George.tan on 2018/7/24.
+  Copyright © 2018年 George.tan. All rights reserved.
+*/
+
+"app_message" = "家信";
+"ifamily_device" = "我家设备";
+"wo_market" = "商城";
+"wo_settting" = "设置";

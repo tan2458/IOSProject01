@@ -155,15 +155,21 @@
 
 #pragma mark - Events
 -(void)loginButtonClick{
-    
+    if ([self.delegate respondsToSelector:@selector(BEBgroundView:clickEvent:)]) {
+        [self.delegate BEBgroundView:self clickEvent:LoginClickEvent];
+    }
 }
 
 -(void)findPassButtonClick{
-    
+    if ([self.delegate respondsToSelector:@selector(BEBgroundView:clickEvent:)]) {
+        [self.delegate BEBgroundView:self clickEvent:FindPassClickEvent];
+    }
 }
 
 -(void)localManagerClick{
-  
+    if ([self.delegate respondsToSelector:@selector(BEBgroundView:clickEvent:)]) {
+        [self.delegate BEBgroundView:self clickEvent:LocalClickEvent];
+    }
 }
 
 /**
